@@ -1150,6 +1150,14 @@ input[type="range"]::-ms-fill-lower {
   width: auto;
 }
 
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[50px\] {
+  width: 50px;
+}
+
 .max-w-screen-xl {
   max-width: 1280px;
 }
@@ -1273,6 +1281,10 @@ input[type="range"]::-ms-fill-lower {
 
 .gap-y-6 {
   row-gap: 1.5rem;
+}
+
+.gap-y-5 {
+  row-gap: 1.25rem;
 }
 
 .overflow-hidden {
