@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,9 +17,6 @@
     color: white;
     font-family: 'Onest', sans-serif;
     min-height: 100vh;
-    --tw-bg-opacity: 1;
-    background-color: rgb(10 10 10 / var(--tw-bg-opacity));
-    background-image: radial-gradient(ellipse 80% 80% at 50% -20%,rgba(120,119,198,0.3),rgba(255,255,255,0));
     }
     @media(prefers-reduce-motion:motion){
         html{
@@ -31,18 +28,23 @@
     background-image: radial-gradient(ellipse 80% 80% at 50% -20%,rgba(120,119,198,0.3),rgba(255,255,255,0));
     }
 </style>
-<body>
 
-        <header id="inicio navbar-default" class="flex justify-center items-center py-2 mx-auto w-[400px] sm:w-[500px] md:w-[740px]">
-            <nav class="flex  gap-y-6 gap-x-6 px-4 flex-row sm:gap-x-6 text-xs md:text-xl top-0 backdrop-blur-2xl rounded-xl mt-3 z-50 fixed">
+<body class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] 
+            dark:bg-white dark:bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)">
+        <header id="inicio" class="flex justify-center items-center py-2 mx-auto w-[400px] sm:w-[500px] md:w-[740px]">
+            <nav class="flex  gap-y-6 gap-x-6 px-4 flex-row sm:gap-x-6 text-xs md:text-xl top-0 backdrop-blur-2xl rounded-xl mt-3 z-50 fixed dark:text-black">
                 <a href="#" class="hover:bg-gray-500  hover:scale-110 transition rounded-full p-2" aria-current="page">Inicio</a>
                 <a href="#educacion" class="hover:bg-gray-500 hover:scale-110 transition rounded-full p-2">Educación</a>
                 <a href="#tecnologias" class="hover:bg-gray-500 hover:scale-110 transition rounded-full p-2">Tecnologias</a>
                 <a href="#proyectos" class="hover:bg-gray-500 hover:scale-110 transition rounded-full p-2">Proyectos</a>
+                <a class="hover:bg-gray-500 hover:scale-110 transition rounded-full p-2 flex">
+                    <label for="dark-mode"></label>
+                        <input type="toggle" id="darkmode" class="rounded-full size-10  dark:bg-black"> 
+                </a>
             </nav>
         </header>
 </div>
-        <section id="sobre-mi" class=" w-[400px] sm:w-[500px] md:w-[740px] items-center justify-center mx-auto mt-32 mb-4 gap-x-3 px-4 text-balance">
+        <section id="sobre-mi" class=" w-[400px] sm:w-[500px] md:w-[740px] items-center justify-center mx-auto mt-32 mb-4 gap-x-3 px-4 text-balance dark:text-black ">
             <img src="/img/avatar.jpg" class="rounded-full size-10 md:size-20 mb-6" alt="Avatar Isaac">
             <h1 class="text-2xl md:text-5xl  justify-start font-bold gap-x-6 flex flex-row ">Hola, soy Isaac
                 <a href="https://www.linkedin.com/in/isaac-frias-56002428a/"
@@ -52,34 +54,52 @@
                 </a>           
             </h1>
             <h2 class=" pt-2 text-lg sm:text-xl from-neutral-400 mx-auto text-start">
-                <span class="text-blue-300">Frontend </span>Developer e<span class="text-blue-300">  Ingeniero</span> en Sistemas. De <span class="text-green-500"> Nuevo</span> León, 
+                <span class="dark:text-blue-900 text-blue-300">Frontend </span>Developer e<span class="dark:text-blue-900 text-blue-300">  Ingeniero</span> en Sistemas. De <span class="text-green-500"> Nuevo</span> León, 
                 <span class="text-red-600">México.</span>
-                Contribuyendo en el</span> <span class="text-yellow-200/90">Desarrollo </span> y <span class="text-yellow-200/90">Programación</span> de Aplicaciones Web.
+                Contribuyendo en el</span> <span class="text-yellow-200/90 dark:text-yellow-400">Desarrollo </span> y <span class="text-yellow-200/90 dark:text-yellow-400">Programación</span> de Aplicaciones Web.
             </h2>
             <ul class="gap-x-4 flex flex-row justify-start items-center mx-auto w-auto">
                 <li class="w-full md:w-auto">
-                    <a href="https://www.linkedin.com/in/isaac-frias-56002428a/" class="justify-center items-center text-sm md:text-lg rounded-full border border-white/70
-                     py-2 px-2 flex gap-x-2 mt-2 bg-white/5 hover:scale-110 transition-transform">
-                        <img src="../img/likedin.svg" alt="" class="size-3 md:size-6">
+                    <a href="https://www.linkedin.com/in/isaac-frias-56002428a/" class="justify-center items-center text-sm md:text-lg rounded-full border border-white/70 dark:border-black 
+                     py-2 px-2 flex gap-x-2 mt-2 bg-white/5 hover:scale-110 transition">
+                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" class="size-3 md:size-6"
+                     preserveAspectRatio="xMidYMid" viewBox="0 0 256 256">
+                     <path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 
+                     31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 
+                     67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 
+                     0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89
+                      18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453" 
+                     fill="currentColor"/></svg>
                         LinkedIn
                     </a>
                 </li>
                 <li class="w-full md:w-auto">
-                    <a href="https://github.com/Hypeyiii" class="justify-center items-center text-sm md:text-lg rounded-full border border-white/70 
+                    <a href="https://github.com/Hypeyiii" class="justify-center items-center text-sm md:text-lg rounded-full border border-white/70 dark:border-black 
                     py-2 px-4 flex gap-x-2 mt-2 bg-white/5  hover:scale-110 transition">
-                        <img src="../img/github.svg" alt="" class="size-3 md:size-6">
+                    <svg viewBox="0 0 256 250" class="size-3 md:size-6" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" 
+                    preserveAspectRatio="xMidYMid"><path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 
+                    6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 
+                    12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 
+                    13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 
+                    35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148
+                     30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 
+                     1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 
+                     7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 
+                     3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 
+                     1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z" fill="currentColor"/>
+                    </svg>
                         Github</a>
                 </li>
                 <li class="w-full md:w-auto">
-                    <a href="mailto:isaacfrias868@gmail.com" class="justify-center items-center text-sm md:text-lg rounded-full border border-white/70 
+                    <a href="mailto:isaacfrias868@gmail.com" class="justify-center items-center text-sm md:text-lg rounded-full border border-white/70 dark:border-black 
                     py-2 px-4 flex gap-x-2 mt-2 bg-white/5  hover:scale-110 transition">
-                        <img src="../img/mail-xmark-svgrepo-com.svg" alt="gmail" class="size-3 md:size-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward size-3 md:size-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" /><path d="M3 6l9 6l9 -6" /><path d="M15 18h6" /><path d="M18 15l3 3l-3 3" /></svg>
                         Isaac@gmail.com</a>
                 </li>
 
             </ul>
         </section>
-<section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center mx-auto mt-32 mb-4 gap-x-3 px-4 text-white/75">
+<section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center mx-auto mt-32 mb-4 gap-x-3 px-4 text-white/75 dark:text-black">
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school size-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" /><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" /></svg>
             <h1 class="font-semibold text-xl sm:text-2xl md:text-4xl">Educacion y Aprendizaje</h1>
 </section>
@@ -89,37 +109,40 @@
     <li class="mb-10 ms-6">            
         <span class="absolute flex items-center justify-center w-2 h-2 bg-blue-300 rounded-full -start-1 ring-8 ">
         </span>
-        <h3 class="flex items-center mb-1 text-sm font-semibold text-blue-300 dark:text-white">Actualmente...</h3>
-        <time class="block mb-2 text-xl font-normal leading-none text-yellow-200/90 dark:text-gray-500">Desarrollador y Estudiante</time>
-        <p class="mb-4 text-base font-normal text-white dark:text-gray-400 text-pretty">Cursando 6to semestre en la carrera de Ingeniero Administrador de Sistemas (IAS). Desarrollando Web´ s de manera didactica y apasionada.</p>
+        <h3 class="flex items-center mb-1 text-sm font-semibold text-blue-300 dark:text-black">Actualmente...</h3>
+        <time class="block mb-2 text-xl font-normal leading-none text-yellow-200/90 dark:text-gray-800">Desarrollador y Estudiante</time>
+        <p class="mb-4 text-base font-normal text-white dark:text-gray-600 text-pretty">Cursando 6to semestre en la carrera de Ingeniero Administrador de Sistemas (IAS). Desarrollando Web´ s de manera didactica y apasionada.</p>
     </li>
     <li class="mb-10 ms-6">            
         <span class="absolute flex items-center justify-center w-2 h-2 bg-blue-300 rounded-full -start-1 ring-8 ">
         </span>
-        <h3 class="flex items-center mb-1 text-sm font-semibold text-blue-300 dark:text-white">Diciembre, 2021</h3>
-        <time class="block mb-2 text-xl font-normal leading-none text-yellow-200/90 dark:text-gray-500 text-left">Entrando en el mundo del desarrollo</time>
-        <p class="mb-4 text-base font-normal text-white dark:text-gray-400 text-pretty">Empecé a adentrarme en el mundo del Desarrollo Web, cursando y materias y aprendiendo Tecnologías didacticamente.</p>
+        <h3 class="flex items-center mb-1 text-sm font-semibold text-blue-300 dark:text-black">Diciembre, 2021</h3>
+        <time class="block mb-2 text-xl font-normal leading-none text-yellow-200/90 dark:text-gray-800 text-left">Entrando en el mundo del desarrollo</time>
+        <p class="mb-4 text-base font-normal text-white dark:text-gray-600 text-pretty">Empecé a adentrarme en el mundo del Desarrollo Web, cursando y materias y aprendiendo Tecnologías didacticamente.</p>
     </li>
     <li class="mb-10 ms-6">            
         <span class="absolute flex items-center justify-center w-2 h-2 bg-blue-300 rounded-full -start-1 ring-8 ">
         </span>
-        <h3 class="flex items-center mb-1 text-sm font-semibold text-blue-300 dark:text-white">Agosto, 2021</h3>
-        <time class="block mb-2 text-xl font-normal leading-none text-yellow-200/90 dark:text-gray-500">Ingreso al Estudio Superior</time>
-        <p class="mb-4 text-base font-normal text-white dark:text-gray-400 text-pretty">Ingreso a la Faculdad de Ingeniería Mecácnica y Eléctrica (FIME) en la carrera de Ingeniero Administrador de Sistemas (IAS).</p>
+        <h3 class="flex items-center mb-1 text-sm font-semibold text-blue-300 dark:text-black">Agosto, 2021</h3>
+        <time class="block mb-2 text-xl font-normal leading-none text-yellow-200/90 dark:text-gray-800">Ingreso al Estudio Superior</time>
+        <p class="mb-4 text-base font-normal text-white dark:text-gray-600 text-pretty">Ingreso a la Faculdad de Ingeniería Mecácnica y Eléctrica (FIME) en la carrera de Ingeniero Administrador de Sistemas (IAS).</p>
     </li>
 </ol>
         </section>
 
-        <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto px-4 mt-28 gap-x-3 text-white/75">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-network size-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="#none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9a6 6 0 1 0 12 0a6 6 0 0 0 -12 0" /><path d="M12 3c1.333 .333 2 2.333 2 6s-.667 5.667 -2 6" /><path d="M12 3c-1.333 .333 -2 2.333 -2 6s.667 5.667 2 6" /><path d="M6 9h12" /><path d="M3 20h7" /><path d="M14 20h7" /><path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M12 15v3" /></svg>
+        <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto px-4 mt-28 gap-x-3 text-white/75 dark:text-black">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-network size-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9a6 6 0 1 0 12 0a6 6 0 0 0 -12 0" /><path d="M12 3c1.333 .333 2 2.333 2 6s-.667 5.667 -2 6" /><path d="M12 3c-1.333 .333 -2 2.333 -2 6s.667 5.667 2 6" /><path d="M6 9h12" /><path d="M3 20h7" /><path d="M14 20h7" /><path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M12 15v3" /></svg>
             <h1 id="tecnologias" class="font-bold text-xl sm:text-2xl md:text-4xl mb-2">Tecnologías<br>
         </section>
-        <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-center items-center pb-5 mx-auto px-4">
-            <p class="text-lg md:text-xl text-pretty">A lo largo de mi tiempo como <span class="text-yellow-200/90">Desarrollador Web</span>, he tenido la oportunidad de desarrollar habilidades con diferentes tipos de <span class="text-yellow-200/90">Tecnologías</span>.</p>
+        <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-center items-center pb-5 mx-auto px-4 dark:text-black">
+            <p class="text-lg md:text-xl text-pretty">A lo largo de mi tiempo como <span class="text-yellow-200/90 dark:text-yellow-400">Desarrollador Web</span>
+                , he tenido la oportunidad de desarrollar habilidades con diferentes tipos de <span class="text-yellow-200/90 dark:text-yellow-400">Tecnologías</span>.</p>
         </section>
             
-            <section class="w-[400px] sm:w-[500px] md:w-[740px] mx-auto grid grid-cols-10 auto-rows-[auto] gap-5 text-white/90 text-xl md:text-xl font-bold px-4">
-            <div id="grid" class="col-span-10 rounded-xl shadow-2xl shadow-white/5">
+            <section class="w-[400px] sm:w-[500px] md:w-[740px] mx-auto grid grid-cols-10 auto-rows-[auto] gap-5 text-white/90 dark:text-black text-xl md:text-xl font-bold px-4">
+            <div class="col-span-10 rounded-xl shadow-2xl shadow-white/5 dark:shadow-black/90 dark:bg-white dark:bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)
+            bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] 
+            dark:bg-white dark:bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)">
                 <h1 class="px-5 pt-5">FrontEnd</h1>
                 <ul class="flex felx-row gap-x-5 mx-auto p-5 justify-start items-center">
                     <li class="hover:scale-110">
@@ -170,16 +193,16 @@
                 </ul>
             </div>
     </section>
-    <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto px-4 mt-28 gap-x-3 text-white/75">
+    <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto px-4 mt-28 gap-x-3 text-white/75 dark:text-black">
         <svg class="size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg>
         <h1 id="tecnologias" class="font-semibold text-xl sm:text-2xl md:text-4xl">Proyectos<br>
     </section>
     <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px]  justify-start items-center 
-                     mx-auto px-4 mt-4 gap-x-3 text-yellow-200/90 text-pretty [&>img]:h-[220px] md:[&>img]:h-[400px]">
+                     mx-auto px-4 mt-4 gap-x-3 text-yellow-200/90 dark:text-yellow-400 text-pretty [&>img]:h-[220px] md:[&>img]:h-[400px]">
         <h1 class="text-lg sm:text-xl md:text-2xl font-bold">
             Asteroid Game
         </h1>
-        <p class="text-lg md:text-xl text-white/95">
+        <p class="text-lg md:text-xl text-white/95 dark:text-black/80">
             Proyecto principal al cursar la materia "Programación Orientada a Objetos". <br>
             Hecho completamente en el lenguaje Java
         </p>
@@ -202,12 +225,12 @@
                         </g>
                       </svg>NetBeans</span>
         </ul>
-        <img src="img/Java-Game.png" alt="Java Game created by me" class="rounded shadow-2xl shadow-white/40 aspect-video">
+        <img src="img/Java-Game.png" alt="Java Game created by me" class="rounded shadow-2xl shadow-white/40 aspect-video dark:shadow-black/90">
 
         <h1 class="text-lg sm:text-xl md:text-2xl font-bold mt-[100px]">
             Tesla Landing Page
         </h1>
-        <p class="text-lg md:text-xl text-white/95">
+        <p class="text-lg md:text-xl text-white/95 dark:text-black/80">
             Proyecto personal para la creación de la página web de Tesla. <br>
             (Sin funcionalidad)
         </p>
@@ -219,28 +242,28 @@
                     <svg class="size-4" viewBox=".15 .13 799.7 479.69" xmlns="http://www.w3.org/2000/svg"><path d="m400 .13c-106.63 0-173.27 53.3-199.93 159.89 39.99-53.3 86.64-73.28 139.95-59.96 30.42 7.6 52.16 29.67 76.23 54.09 39.2 39.78 84.57 85.82 183.68 85.82 106.62 0 173.27-53.3 199.92-159.9-39.98 53.3-86.63 73.29-139.95 59.97-30.41-7.6-52.15-29.67-76.22-54.09-39.2-39.78-84.58-85.82-183.68-85.82zm-199.93 239.84c-106.62 0-173.27 53.3-199.92 159.9 39.98-53.3 86.63-73.29 139.95-59.96 30.41 7.61 52.15 29.67 76.22 54.08 39.2 39.78 84.58 85.83 183.68 85.83 106.63 0 173.27-53.3 199.93-159.9-39.99 53.3-86.64 73.29-139.95 59.96-30.42-7.59-52.16-29.67-76.23-54.08-39.2-39.78-84.57-85.83-183.68-85.83z" fill="#06b6d4"/></svg>
                     Tailwind CSS</span>
         </ul>
-        <img src="img/tesla-page.png" alt="Java Game created by me" class="rounded shadow-2xl shadow-white/40 aspect-video ">
+        <img src="img/tesla-page.png" alt="Java Game created by me" class="rounded shadow-2xl shadow-white/40 aspect-video dark:shadow-black/90 ">
     </section>
 
-    <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] items-center py-3 mx-auto px-4 mt-32 text-white/75 text-xs sm:text-lg md:text-xl text-pretty">
+    <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] items-center py-3 mx-auto px-4 mt-32 text-white/75 dark:text-black/80 text-xs sm:text-lg md:text-xl text-pretty ">
         <footer class="mx-auto items-center">  
             <ul class="flex flex-col-reverse gap-y-5 text-center gap-x-2 sm:gap-x-4 md:gap-x-5 sm:flex-row">
                 <li class="grow">
                     © 2024 Isaac Frias. Derechos Reservados
                 </li>
-                <li class="hover:underline"> 
+                <li class="hover:underline "> 
                     <a href="#sobre-mi">Sobre mí</a>
                 </li>
                 <li class="hover:underline"> 
-                    <a href="#sobre-mi">Contacto</a>
+                    <a href="modoscure.html">Contacto</a>
                 </li>
             </ul>
         </footer>
     </section>
     
-    
-
+    <script src="src/dark.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+</div>
 </body>
 </html>
