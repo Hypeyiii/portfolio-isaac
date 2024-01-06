@@ -31,24 +31,28 @@
 
 <body class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] 
             dark:bg-white dark:bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)">
-        <header id="inicio" class="flex justify-center items-center py-2 mx-auto w-[400px] sm:w-[500px] md:w-[740px]">
-            <nav class="flex gap-y-6 gap-x-6 px-4 py-4 flex-row sm:gap-x-6 text-xs md:text-xl top-0 backdrop-blur-2xl rounded-xl mt-3 z-50 fixed dark:text-black">
-               
-                <a href="#" class="hover:bg-gray-500  hover:scale-110 transition rounded-full p-2" aria-current="page">Inicio</a>
-                <a href="#educacion" class="hover:bg-gray-500 hover:scale-110 transition rounded-full p-2">Educación</a>
-                <a href="#tecnologias" class="hover:bg-gray-500 hover:scale-110 transition rounded-full p-2">Tecnologias</a>
-                <a href="#proyectos" class="hover:bg-gray-500 hover:scale-110 transition rounded-full p-2">Proyectos</a>
-                <a class="hover:bg-gray-500 hover:scale-110 transition rounded-full p-2 items-center justify-center mx-auto">
-                    <label for="dark-mode" class="rounded-full size-3 dark:bg-black"></label>
-                        <input type="checkbox" id="darkmode" class="rounded-full h-5 w-5 dark:bg-black"> 
-                </a>
-            
-            </nav>
-        </header>
-</div>
-        <section id="sobre-mi" class=" w-[400px] sm:w-[500px] md:w-[740px] items-center justify-center mx-auto mt-32 mb-4 gap-x-3 px-4 text-balance dark:text-black ">
+
+            <section class="w-[400px] sm:w-[500px] md:w-[740px] mx-auto text-white/90 dark:text-black text-xl md:text-xl font-bold px-4 justify-center items-center flex">
+            <header id="inicio" class="flex py-4 text-xs md:text-xl top-0
+                                    backdrop-blur-2xl rounded-xl mt-3 z-40 fixed dark:text-black mx-auto justify-between items-center">
+                <ul class="flex flex-row justify-center items-center mx-auto gap-x-8 py-1 px-3">
+                    <li class="hover:bg-gray-400 hover:scale-110 transition rounded-full"><a href="#" aria-current="page">Inicio</a></li>
+                    <li class="hover:bg-gray-400 hover:scale-110 transition rounded-full"><a href="#educacion">Educación</a></li>
+                    <li class="hover:bg-gray-400 hover:scale-110 transition rounded-full"><a href="#tecnologias">Tecnologias</a></li>
+                    <li class="hover:bg-gray-400 hover:scale-110 transition rounded-full"><a href="#proyectos">Proyectos</a></li>
+                    <li class="hover:bg-gray-400 hover:scale-110 transition rounded-full"><a>
+                    <label for="dark-mode"></label>
+                    <input type="checkbox" id="darkmode" class="rounded-full h-5 w-5 dark:bg-black"> 
+                        </a>
+                    </li>
+                </ul>
+          
+        </header> 
+    </section>
+    
+        <section id="sobre-mi" class=" w-[400px] sm:w-[500px] md:w-[740px] items-center justify-center mx-auto mt-32 mb-4 gap-x-3  text-balance dark:text-black px-4">
             <img src="/img/avatar.jpg" class="rounded-full size-10 md:size-20 mb-6" alt="Avatar Isaac">
-            <h1 class="text-2xl md:text-5xl  justify-start font-bold gap-x-6 flex flex-row ">Hola, soy Isaac
+            <h1 class="text-2xl md:text-5xl  justify-start font-bold gap-x-6 flex flex-row "> Hola, soy Isaac
                 <a href="https://www.linkedin.com/in/isaac-frias-56002428a/"
                     class="justify-center items-center flex">
                     <span class="bg-blue-300 hover:bg-blue-200 text-center text-xs  me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 font-bold text-black hover:scale-105">
@@ -61,10 +65,10 @@
                 Contribuyendo en el</span> <span class="text-yellow-200/90 dark:text-yellow-400">Desarrollo </span> y <span class="text-yellow-200/90 dark:text-yellow-400">Programación</span> de Aplicaciones Web.
             </h2>
             <ul class="gap-x-4 flex flex-row justify-start items-center mx-auto w-auto">
-                <li class="w-full md:w-auto">
+                <li class="">
                     <a href="https://www.linkedin.com/in/isaac-frias-56002428a/" class="justify-center items-center text-sm md:text-lg rounded-full border border-white/70 dark:border-black 
                      py-2 px-2 flex gap-x-2 mt-2 bg-white/5 hover:scale-110 transition">
-                     <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" class="size-3 md:size-6"
+                     <svg xmlns="http://www.w3.org/2000/svg" class="size-3 md:size-6"
                      preserveAspectRatio="xMidYMid" viewBox="0 0 256 256">
                      <path d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 
                      31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 
@@ -75,9 +79,9 @@
                         LinkedIn
                     </a>
                 </li>
-                <li class="w-full md:w-auto">
+                <li>
                     <a href="https://github.com/Hypeyiii" class="justify-center items-center text-sm md:text-lg rounded-full border border-white/70 dark:border-black 
-                    py-2 px-4 flex gap-x-2 mt-2 bg-white/5  hover:scale-110 transition">
+                    py-2 px-2 flex gap-x-2 mt-2 bg-white/5  hover:scale-110 transition">
                     <svg viewBox="0 0 256 250" class="size-3 md:size-6" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg" 
                     preserveAspectRatio="xMidYMid"><path d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 
                     6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 
@@ -92,16 +96,17 @@
                     </svg>
                         Github</a>
                 </li>
-                <li class="w-full md:w-auto">
+                <li>
                     <a href="mailto:isaacfrias868@gmail.com" class="justify-center items-center text-sm md:text-lg rounded-full border border-white/70 dark:border-black 
-                    py-2 px-4 flex gap-x-2 mt-2 bg-white/5  hover:scale-110 transition">
+                    py-2 px-2 flex gap-x-2 mt-2 bg-white/5  hover:scale-110 transition">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward size-3 md:size-6" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" /><path d="M3 6l9 6l9 -6" /><path d="M15 18h6" /><path d="M18 15l3 3l-3 3" /></svg>
                         Isaac@gmail.com</a>
                 </li>
 
             </ul>
         </section>
-<section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center mx-auto mt-32 mb-4 gap-x-3 px-4 text-white/75 dark:text-black">
+       
+<section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center mx-auto mt-32 mb-4 gap-x-3  text-white/75 dark:text-black px-4">
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school size-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" /><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" /></svg>
             <h1 class="font-semibold text-xl sm:text-2xl md:text-4xl">Educacion y Aprendizaje</h1>
 </section>
@@ -132,11 +137,11 @@
 </ol>
         </section>
 
-        <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto px-4 mt-28 gap-x-3 text-white/75 dark:text-black">
+        <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto mt-28 gap-x-3 text-white/75 dark:text-black px-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-network size-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9a6 6 0 1 0 12 0a6 6 0 0 0 -12 0" /><path d="M12 3c1.333 .333 2 2.333 2 6s-.667 5.667 -2 6" /><path d="M12 3c-1.333 .333 -2 2.333 -2 6s.667 5.667 2 6" /><path d="M6 9h12" /><path d="M3 20h7" /><path d="M14 20h7" /><path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M12 15v3" /></svg>
             <h1 id="tecnologias" class="font-bold text-xl sm:text-2xl md:text-4xl mb-2">Tecnologías<br>
         </section>
-        <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-center items-center pb-5 mx-auto px-4 dark:text-black">
+        <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-center items-center pb-5 mx-auto dark:text-black px-4">
             <p class="text-lg md:text-xl text-pretty">A lo largo de mi tiempo como <span class="text-yellow-200/90 dark:text-yellow-400">Desarrollador Web</span>
                 , he tenido la oportunidad de desarrollar habilidades con diferentes tipos de <span class="text-yellow-200/90 dark:text-yellow-400">Tecnologías</span>.</p>
         </section>
@@ -195,12 +200,12 @@
                 </ul>
             </div>
     </section>
-    <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto px-4 mt-28 gap-x-3 text-white/75 dark:text-black">
+    <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto mt-28 gap-x-3 text-white/75 dark:text-black px-4">
         <svg class="size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg>
         <h1 id="tecnologias" class="font-semibold text-xl sm:text-2xl md:text-4xl">Proyectos<br>
     </section>
-    <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px]  justify-start items-center 
-                     mx-auto px-4 mt-4 gap-x-3 text-yellow-200/90 dark:text-yellow-400 text-pretty [&>img]:h-[220px] md:[&>img]:h-[400px]">
+    <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px]  justify-start items-center px-4
+                     mx-auto mt-4 gap-x-3 text-yellow-200/90 dark:text-yellow-400 text-pretty [&>img]:h-[220px] md:[&>img]:h-[400px]">
         <h1 class="text-lg sm:text-xl md:text-2xl font-bold">
             Asteroid Game
         </h1>
@@ -247,7 +252,7 @@
         <img src="img/tesla-page.png" alt="Java Game created by me" class="rounded shadow-2xl shadow-white/40 aspect-video dark:shadow-black/90 ">
     </section>
 
-    <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] items-center py-3 mx-auto px-4 mt-32 text-white/75 dark:text-black/80 text-xs sm:text-lg md:text-xl text-pretty ">
+    <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] items-center py-3 mx-auto mt-32 text-white/75 dark:text-black/80 text-xs sm:text-lg md:text-xl text-pretty px-4">
         <footer class="mx-auto items-center">  
             <ul class="flex flex-col-reverse gap-y-5 text-center gap-x-2 sm:gap-x-4 md:gap-x-5 sm:flex-row">
                 <li class="grow">
@@ -257,7 +262,7 @@
                     <a href="#sobre-mi">Sobre mí</a>
                 </li>
                 <li class="hover:underline"> 
-                    <a href="modoscure.html">Contacto</a>
+                    <a href="#sobre-mi">Contacto</a>
                 </li>
             </ul>
         </footer>
