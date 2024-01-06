@@ -29,9 +29,8 @@
         }
     }
     #grid{
-        background: #000000;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-color: rgb(10 10 10 / var(--tw-bg-opacity));
+    background-image: radial-gradient(ellipse 80% 80% at 50% -20%,rgba(120,119,198,0.3),rgba(255,255,255,0));
     }
 </style>
 <body>
@@ -54,7 +53,7 @@
             </nav>
         </header>
 </div>
-        <section id="sobre-mi" class=" w-[400px] sm:w-[450px] md:w-[600px] lg:w[720px] items-center mx-auto mt-32 mb-4 gap-x-3 px-4 text-balance">
+        <section id="sobre-mi" class=" w-[400px] sm:w-[500px] md:w-[600px] lg:w[720px] items-center mx-auto mt-32 mb-4 gap-x-3 px-4 text-balance">
             <img src="/img/avatar.jpg" class="rounded-full size-10 md:size-20 mb-6" alt="Avatar Isaac">
             <h1 class="text-2xl lg:text-5xl  justify-start font-bold gap-x-4 flex flex-row ">Hola, soy Isaac
                 <a href="https://www.linkedin.com/in/isaac-frias-56002428a/"
@@ -129,7 +128,7 @@
         </section>
             
             <section class="w-[400px] sm:w-[500px] md:w-[600px] lg:w[720px] mx-auto grid grid-cols-10 auto-rows-[auto] gap-5 text-white/90 text-xl md:text-xl font-bold px-4">
-            <div id="grid" class="col-span-10 rounded-xl">
+            <div id="grid" class="col-span-10 rounded-xl ">
                 <h1 class="px-5 pt-5">FrontEnd</h1>
                 <ul class="flex felx-row gap-x-5 mx-auto p-5 justify-start items-center">
                     <li class="hover:scale-110">
