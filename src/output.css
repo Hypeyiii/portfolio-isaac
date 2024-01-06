@@ -1111,6 +1111,18 @@ input[type="range"]::-ms-fill-lower {
   row-gap: 1.5rem;
 }
 
+.text-ellipsis {
+  text-overflow: ellipsis;
+}
+
+.text-wrap {
+  text-wrap: wrap;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
 .text-balance {
   text-wrap: balance;
 }
@@ -1259,6 +1271,14 @@ input[type="range"]::-ms-fill-lower {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .text-2xl {
@@ -1439,6 +1459,14 @@ input[type="range"]::-ms-fill-lower {
          column-gap: 1.5rem;
   }
 
+  .sm\:text-balance {
+    text-wrap: balance;
+  }
+
+  .sm\:text-pretty {
+    text-wrap: pretty;
+  }
+
   .sm\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -1478,6 +1506,10 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:text-pretty {
+    text-wrap: pretty;
   }
 
   .md\:text-lg {
