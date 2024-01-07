@@ -82,12 +82,15 @@ function changeLanguage(language) {
         }
     });
 }
-const usaFlag = document.getElementById("usa")
 
-const changeLanguageButton = document.getElementById('changeLanguage');
-changeLanguageButton.addEventListener('click', () => {
-    const lang = changeLanguageButton.getAttribute('data-lang') === 'en' ? 'es' : 'en';
-    changeLanguage(lang);
-    changeLanguageButton.setAttribute('data-lang', lang);
-    changeLanguageButton.querySelector('img').src = lang === 'en' ? 'img/flag-for-flag-mexico-svgrepo-com.svg' : 'img/usa-svgrepo-com.svg';
+const changeLanguageButtonUsa = document.getElementById('changeLanguageUsa');
+changeLanguageButtonUsa.addEventListener('click', () => {
+    const lang = changeLanguageButtonUsa.getAttribute('data-lang') === 'en' ? 'en': 'en';
+    changeLanguage(lang); 
 });
+const changeLanguageButtonMexico = document.getElementById('changeLanguageMex');
+changeLanguageButtonMexico.addEventListener('click', () => {
+    const lang = changeLanguageButtonMexico.getAttribute('data-lang') === 'es' ? 'es': 'es';
+    changeLanguage(lang); 
+});
+
