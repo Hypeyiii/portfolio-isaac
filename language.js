@@ -16,9 +16,12 @@ const translations = {
         'and':'y ',
         'program':'Programación ',
         'web':'de Aplicaciones Web.',
+        'section-education':'Educacion y Aprendizaje',
+        'time-1':'Actualmente...',
         
     },
     'en': {
+        //About Me
         'title': 'Hey, I´m Isaac',
         'button': 'Hire me here',
         'home':'Home',
@@ -34,7 +37,10 @@ const translations = {
         'and':'and ',
         'program':'Programming ',
         'web':'of Web Applications.',
-        'presentation':'Frontend Developer and Systems Engineer. From Nuevo León, Mexico. Contributing to the Development and Programming of Web Applications.',
+
+        //Section Education and Learning
+        'section-education':'Education and learning',
+        'time-1':'On going...',
     }
 };
 
