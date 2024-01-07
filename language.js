@@ -20,7 +20,12 @@ const translations = {
         'time-1':'Actualmente...',
         'doing':'Desarrollador y Estudiante',
         'doing-description':'Cursando 6to semestre en la carrera de Ingeniero Administrador de Sistemas. Desarrollando Web´ s de manera didactica y apasionada.',
-        
+        'time-2':'Diciembre, 2021',
+        'doing-2':'Entrando en el mundo del desarrollo',
+        'doing-description-2':'Empecé a adentrarme en el mundo del Desarrollo Web, cursando materias y aprendiendo Tecnologías didacticamente.',
+        'time-3':'Agosto, 2021',
+        'doing-3':'Ingreso al Estudio Superior',
+        'doing-description-3':'Ingreso a la Faculdad de Ingeniería Mecácnica y Eléctrica (FIME) en la carrera de Ingeniero Administrador de Sistemas (IAS).',
     },
     'en': {
         'title': 'Hey, I´m Isaac',
@@ -41,8 +46,13 @@ const translations = {
         'section-education':'Education and learning',
         'time-1':'On going...',
         'doing':'Developer and Studend',
+        'time-2':' Dececmber, 2021',
         'doing-description':'Currently studying the 6th semester in the Systems Administrator Engineer career. Developing websites in a didactic and passionate way."',
-
+        'doing-2':'Entering the world of development',
+        'doing-description-2':'I started to delve into the world of Web Development, taking courses and learning technologies in a didactic manner.',
+        'time-3':'August, 2021',
+        'doing-3':'Entering University',
+        'doing-description-3':'Entering the Faculty of Mechanical and Electrical Engineering (FIME) in the Systems Administrator Engineer (IAS) career.',
     }
 };
 
