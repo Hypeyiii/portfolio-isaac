@@ -151,15 +151,16 @@
 
         <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto mt-28 gap-x-3 text-white/75 dark:text-black px-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-network size-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9a6 6 0 1 0 12 0a6 6 0 0 0 -12 0" /><path d="M12 3c1.333 .333 2 2.333 2 6s-.667 5.667 -2 6" /><path d="M12 3c-1.333 .333 -2 2.333 -2 6s.667 5.667 2 6" /><path d="M6 9h12" /><path d="M3 20h7" /><path d="M14 20h7" /><path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M12 15v3" /></svg>
-            <h1 id="tecnologias" class="font-bold text-xl sm:text-2xl md:text-4xl mb-2">Tecnologías<br>
+            <h1 data-translate="tech" id="tecnologias" class="font-bold text-xl sm:text-2xl md:text-4xl mb-2">Tecnologías<br>
         </section>
         <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-center items-center pb-5 mx-auto dark:text-black px-4">
-            <p class="text-lg md:text-xl text-pretty">A lo largo de mi tiempo como <span class="text-yellow-200/90 dark:text-yellow-400">Desarrollador Web</span>
-                , he tenido la oportunidad de desarrollar habilidades con diferentes tipos de <span class="text-yellow-200/90 dark:text-yellow-400">Tecnologías</span>.</p>
+            <p class="text-lg md:text-xl text-pretty"><span data-translate="tech-description">A lo largo de mi tiempo como</span> <span data-translate="web-dev" class="text-yellow-200/90 dark:text-yellow-400">Desarrollador Web</span>
+               <span data-translate="tech-description-2"> , he tenido la oportunidad de desarrollar habilidades con diferentes tipos de</span> <span data-translate="tech" class="text-yellow-200/90 dark:text-yellow-400">Tecnologías</span>.</p>
         </section>
             
             <section class="w-[400px] sm:w-[500px] md:w-[740px] mx-auto grid grid-cols-10 auto-rows-[auto] gap-5 text-white/90 dark:text-black text-xl md:text-xl font-bold px-4">
-            <div class="col-span-10 rounded-xl shadow-2xl shadow-white/5 dark:shadow-black/90 dark:bg-white dark:bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)
+            <div class="col-span-10 rounded-xl shadow-2xl shadow-white/30 dark:shadow-black/90 dark:bg-white 
+            dark:bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)
             bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] 
             dark:bg-white dark:bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)">
                 <h1 class="px-5 pt-5">FrontEnd</h1>
@@ -210,15 +211,15 @@
     </section>
     <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto mt-28 gap-x-3 text-white/75 dark:text-black px-4">
         <svg class="size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg>
-        <h1 id="tecnologias" class="font-semibold text-xl sm:text-2xl md:text-4xl">Proyectos<br>
+        <h1 id="tecnologias" class="font-semibold text-xl sm:text-2xl md:text-4xl" data-translate="projects">Proyectos<br>
     </section>
     <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px]  justify-start items-center px-4
                      mx-auto mt-4 gap-x-3 text-yellow-200/90 dark:text-yellow-400 text-pretty [&>img]:h-[220px] md:[&>img]:h-[400px]">
         <h1 class="text-lg sm:text-xl md:text-2xl font-bold">
             Asteroid Game
         </h1>
-        <p class="text-lg md:text-xl text-white/95 dark:text-black/80">
-            Proyecto principal al cursar la materia "Programación Orientada a Objetos". <br>
+        <p class="text-lg md:text-xl text-white/95 dark:text-black/80" data-translate="game-description">
+            Proyecto principal al cursar la materia "Programación Orientada a Objetos".
             Hecho completamente en el lenguaje Java
         </p>
         <ul class="flex flex-row justify-start items-center mt-4 mb-2 gap-x-2">
@@ -245,9 +246,8 @@
         <h1 class="text-lg sm:text-xl md:text-2xl font-bold mt-[100px]">
             Tesla Landing Page
         </h1>
-        <p class="text-lg md:text-xl text-white/95 dark:text-black/80">
-            Proyecto personal para la creación de la página web de Tesla. <br>
-            (Sin funcionalidad)
+        <p class="text-lg md:text-xl text-white/95 dark:text-black/80 text-pretty" data-translate="tesla-description">
+            Proyecto personal para la creación de la página web de Tesla. Hecho con HTML y Tailwind. (Sin funcionalidad).
         </p>
         <ul class="flex flex-row justify-start items-center mt-4 mb-2 gap-x-2">
             <span class="flex gap-x-2 rounded-full text-xs bg-black text-white py-1 px-2 border border-white/10 items-center">
@@ -263,14 +263,14 @@
     <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] items-center py-3 mx-auto mt-32 text-white/75 dark:text-black/80 text-xs sm:text-lg md:text-xl text-pretty px-4">
         <footer class="mx-auto items-center">  
             <ul class="flex flex-col-reverse gap-y-5 text-center gap-x-2 sm:gap-x-4 md:gap-x-5 sm:flex-row">
-                <li class="grow">
+                <li data-translate="footer" class="grow">
                     © 2024 Isaac Frias. Derechos Reservados
                 </li>
                 <li class="hover:underline "> 
-                    <a href="#sobre-mi">Sobre mí</a>
+                    <a href="#sobre-mi" data-translate="about">Sobre mí</a>
                 </li>
                 <li class="hover:underline"> 
-                    <a href="#sobre-mi">Contacto</a>
+                    <a href="#sobre-mi" data-translate="contact">Contacto</a>
                 </li>
             </ul>
         </footer>

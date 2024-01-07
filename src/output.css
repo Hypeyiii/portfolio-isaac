@@ -1376,6 +1376,10 @@ input[type="range"]::-ms-fill-lower {
   white-space: nowrap;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .text-balance {
   text-wrap: balance;
 }
@@ -1613,6 +1617,10 @@ input[type="range"]::-ms-fill-lower {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-start {
   text-align: start;
 }
@@ -1769,6 +1777,11 @@ input[type="range"]::-ms-fill-lower {
 
 .shadow-white\/25 {
   --tw-shadow-color: rgb(255 255 255 / 0.25);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-white\/30 {
+  --tw-shadow-color: rgb(255 255 255 / 0.3);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
