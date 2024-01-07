@@ -18,10 +18,11 @@ const translations = {
         'web':'de Aplicaciones Web.',
         'section-education':'Educacion y Aprendizaje',
         'time-1':'Actualmente...',
+        'doing':'Desarrollador y Estudiante',
+        'doing-description':'Cursando 6to semestre en la carrera de Ingeniero Administrador de Sistemas. Desarrollando Web´ s de manera didactica y apasionada.',
         
     },
     'en': {
-        //About Me
         'title': 'Hey, I´m Isaac',
         'button': 'Hire me here',
         'home':'Home',
@@ -37,10 +38,11 @@ const translations = {
         'and':'and ',
         'program':'Programming ',
         'web':'of Web Applications.',
-
-        //Section Education and Learning
         'section-education':'Education and learning',
         'time-1':'On going...',
+        'doing':'Developer and Studend',
+        'doing-description':'Currently studying the 6th semester in the Systems Administrator Engineer career. Developing websites in a didactic and passionate way."',
+
     }
 };
 
