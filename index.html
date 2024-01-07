@@ -40,7 +40,8 @@
                     <li class="hover:bg-gray-400 hover:scale-110 transition rounded-full"><a href="#educacion">Educación</a></li>
                     <li class="hover:bg-gray-400 hover:scale-110 transition rounded-full"><a href="#tecnologias">Tecnologias</a></li>
                     <li class="hover:bg-gray-400 hover:scale-110 transition rounded-full"><a href="#proyectos">Proyectos</a></li>
-                    <li class="hover:bg-gray-400 hover:scale-110 transition rounded-full"><a>
+                    <li class="hover:scale-125 transition rounded-full">
+                    <a>
                     <label for="dark-mode"></label>
                     <input type="checkbox" id="darkmode" class="rounded-full h-5 w-5 dark:bg-black"> 
                         </a>
@@ -51,8 +52,8 @@
     </section>
     
         <section id="sobre-mi" class=" w-[400px] sm:w-[500px] md:w-[740px] items-center justify-center mx-auto mt-32 mb-4 gap-x-3  text-balance dark:text-black px-4">
-            <img src="/img/avatar.jpg" class="rounded-full size-10 md:size-20 mb-6" alt="Avatar Isaac">
-            <h1 class="text-2xl md:text-5xl  justify-start font-bold gap-x-6 flex flex-row "> Hola, soy Isaac
+            <img src="/img/avatar.jpg" class="rounded-full size-10 md:size-20 mb-6 shadow-2xl shadow-white/25 dark:shadow-black/30" alt="Avatar Isaac">
+            <h1 class="text-2xl md:text-5xl  justify-start font-bold gap-x-6 flex flex-row" data-section="profile" data-value="title"> Hola, soy Isaac
                 <a href="https://www.linkedin.com/in/isaac-frias-56002428a/"
                     class="justify-center items-center flex">
                     <span class="bg-blue-300 hover:bg-blue-200 text-center text-xs  me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 font-bold text-black hover:scale-105">
@@ -62,7 +63,7 @@
             <h2 class=" pt-2 text-lg sm:text-xl from-neutral-400 mx-auto text-start">
                 <span class="dark:text-blue-900 text-blue-300">Frontend </span>Developer e<span class="dark:text-blue-900 text-blue-300">  Ingeniero</span> en Sistemas. De <span class=" dark:text-green-900 text-green-500 "> Nuevo</span> León, 
                 <span class="text-red-600">México.</span>
-                Contribuyendo en el</span> <span class="text-yellow-200/90 dark:text-yellow-400">Desarrollo </span> y <span class="text-yellow-200/90 dark:text-yellow-400">Programación</span> de Aplicaciones Web.
+                Contribuyendo en el</span> <span id="text-yellow" class="text-yellow-200/90 dark:text-yellow-400">Desarrollo </span> y <span class="text-yellow-200/90 dark:text-yellow-400">Programación</span> de Aplicaciones Web.
             </h2>
             <ul class="gap-x-4 flex flex-row justify-start items-center mx-auto w-auto">
                 <li class="">
@@ -170,9 +171,7 @@
                     <li class="hover:scale-110">
                         <img src="img/react-2.svg" alt="HTML LOGO" class="size-10">
                     </li>
-                    <li class="hover:scale-110">
-                        <img src="img/flutter.svg" alt="HTML LOGO" class="size-10">
-                    </li>
+                    
                 </ul>
                 <h1 class="px-5 pt-5">BackEnd</h1>
                 <ul class="flex felx-row gap-x-5 mx-auto p-5 justify-start items-center">
@@ -182,9 +181,7 @@
                     <li class="hover:scale-110">
                         <img src="img/java-4.svg" alt="HTML LOGO" class="size-10">
                     </li>
-                    <li class="hover:scale-110">
-                        <img src="img/python-5.svg" alt="HTML LOGO" class="size-10">
-                    </li>
+                    
                 </ul>
                 <h1 class="px-5 pt-5">Data Bases</h1>
                 <ul class="flex felx-row gap-x-5 mx-auto p-5 justify-start items-center">
@@ -268,6 +265,7 @@
         </footer>
     </section>
     
+    <script src="language.js"></script>
     <script src="src/dark.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="../node_modules/flowbite/dist/flowbite.js"></script>

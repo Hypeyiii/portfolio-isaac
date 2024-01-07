@@ -1400,6 +1400,10 @@ input[type="range"]::-ms-fill-lower {
   border-radius: 0.5rem;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
 .rounded-e-lg {
   border-start-end-radius: 0.5rem;
   border-end-end-radius: 0.5rem;
@@ -1755,6 +1759,16 @@ input[type="range"]::-ms-fill-lower {
 
 .shadow-white\/5 {
   --tw-shadow-color: rgb(255 255 255 / 0.05);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-white {
+  --tw-shadow-color: #ffffff;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-white\/25 {
+  --tw-shadow-color: rgb(255 255 255 / 0.25);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -2222,6 +2236,31 @@ input[type="range"]::-ms-fill-lower {
 
 :is(:where(.dark) .dark\:shadow-black\/90) {
   --tw-shadow-color: rgb(0 0 0 / 0.9);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(:where(.dark) .dark\:shadow-white\/5) {
+  --tw-shadow-color: rgb(255 255 255 / 0.05);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(:where(.dark) .dark\:shadow-black\/5) {
+  --tw-shadow-color: rgb(0 0 0 / 0.05);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(:where(.dark) .dark\:shadow-black\/85) {
+  --tw-shadow-color: rgb(0 0 0 / 0.85);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(:where(.dark) .dark\:shadow-black\/60) {
+  --tw-shadow-color: rgb(0 0 0 / 0.6);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+:is(:where(.dark) .dark\:shadow-black\/30) {
+  --tw-shadow-color: rgb(0 0 0 / 0.3);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
