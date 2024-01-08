@@ -4,101 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Onest:wght@500&family=Open+Sans:wght@300&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
 </head>
-<style>
-    html{
-      scroll-behavior: smooth;   
-    }
-    body{
-    color: white;
-    font-family: 'Onest', sans-serif;
-    min-height: 100vh;
-    }
-    @media(prefers-reduce-motion:motion){
-        html{
-            scroll-behavior: auto;
-        }
-    }
-    #grid{
-        background-color: rgb(10 10 10 / var(--tw-bg-opacity));
-    background-image: radial-gradient(ellipse 80% 80% at 50% -20%,rgba(120,119,198,0.3),rgba(255,255,255,0));
-    }
-    #animation{
-        animation: appearFromBottom 1s ease-out;
-        
-    }
-
-@media (max-width: 640px) {
-  @keyframes appearFromBottomSmall {
-    0% {
-      opacity: 0;
-      transform: translateX(-30px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-#animation {
-  /* Aplicar estilos comunes a todas las animaciones */
-  animation-duration: 1s;
-  animation-fill-mode: both;
-}
-
-@media (max-width: 640px) {
-  #animation {
-    animation-name: appearFromBottomSmall;
-  }
-}
-
-@media (min-width: 640px) and (max-width: 768px) {
-  #animation {
-    animation-name: appearFromBottomMedium;
-  }
-}
-
-@media (min-width: 640px) and (max-width: 768px) {
-  @keyframes appearFromBottomMedium {
-    0% {
-      opacity: 0;
-      transform: translateX(-70px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-@media (min-width: 768px){
-  #animation {
-    animation-name: appearFromBottomBig;
-  }
-}
-
-@media (min-width: 768px){
-  @keyframes appearFromBottomBig {
-    0% {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-}
-
-</style>
-
 <body class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] 
             dark:bg-white dark:bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)">
 
-            <section class="w-[400px] sm:w-[500px] md:w-[740px] mx-auto text-white/90 dark:text-black text-xl md:text-xl font-bold px-4 justify-center items-center flex">
+    <section class="w-[400px] sm:w-[500px] md:w-[740px] mx-auto text-white/90 dark:text-black text-xl md:text-xl font-bold px-4 justify-center items-center flex">
             <header id="inicio" class="flex py-4 text-xs md:text-xl top-0
                                     backdrop-blur-2xl rounded-xl mt-3 z-40 fixed dark:text-black mx-auto justify-between items-center">
                 <ul class="flex flex-row justify-center items-center mx-auto gap-x-3 md:gap-x-8 px-2">
@@ -144,7 +59,7 @@
         </header> 
     </section>
     
-        <section id="sobre-mi" class=" w-[400px] sm:w-[500px] md:w-[740px] items-center justify-center mx-auto mt-32 mb-4 gap-x-3  text-balance dark:text-black px-4">
+    <section id="sobre-mi" class=" w-[400px] sm:w-[500px] md:w-[740px] items-center justify-center mx-auto mt-32 mb-4 gap-x-3  text-balance dark:text-black px-4">
             <img src="/img/avatar.jpg" class="rounded-full size-10 md:size-20 mb-6 shadow-2xl shadow-white/25 dark:shadow-black/30" alt="Avatar Isaac">
             <div class="flex flex-row gap-x-6">
             <h1 id="animation" class="text-2xl md:text-5xl  justify-start font-bold gap-x-6 flex flex-row" data-translate="title"> Hola, soy Isaac</h1>
@@ -204,14 +119,14 @@
                 </li>
 
             </ul>
-        </section>
+    </section>
        
-<section id="educacion" class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center mx-auto mt-32 mb-4 gap-x-3  text-white/75 dark:text-black px-4">
+    <section id="educacion" class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center mx-auto mt-32 mb-4 gap-x-3  text-white/75 dark:text-black px-4">
     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school size-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 9l-10 -4l-10 4l10 4l10 -4v6" /><path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4" /></svg>
             <h1 data-translate="section-education" class="font-semibold text-xl sm:text-2xl md:text-4xl">Educacion y Aprendizaje</h1>
-</section>
+    </section>
         
-        <section class=" w-[400px] sm:w-[500px] md:w-[740px] flex justify-between items-center py-3 mx-auto px-4">
+    <section class=" w-[400px] sm:w-[500px] md:w-[740px] flex justify-between items-center py-3 mx-auto px-4">
 <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
     <li class="mb-10 ms-6">            
         <span class="absolute flex items-center justify-center w-2 h-2 bg-blue-300 dark:bg-blue-500  rounded-full -start-1 ring-8 ">
@@ -235,18 +150,18 @@
         <p data-translate="doing-description-3" class="mb-4 text-base font-normal text-white dark:text-gray-600 text-pretty">Ingreso a la Faculdad de Ingeniería Mecácnica y Eléctrica (FIME) en la carrera de Ingeniero Administrador de Sistemas (IAS).</p>
     </li>
 </ol>
-        </section>
+    </section>
 
-        <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto mt-28 gap-x-3 text-white/75 dark:text-black px-4">
+    <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto mt-28 gap-x-3 text-white/75 dark:text-black px-4">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-network size-10" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 9a6 6 0 1 0 12 0a6 6 0 0 0 -12 0" /><path d="M12 3c1.333 .333 2 2.333 2 6s-.667 5.667 -2 6" /><path d="M12 3c-1.333 .333 -2 2.333 -2 6s.667 5.667 2 6" /><path d="M6 9h12" /><path d="M3 20h7" /><path d="M14 20h7" /><path d="M10 20a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" /><path d="M12 15v3" /></svg>
             <h1 data-translate="tech" id="tecnologias" class="font-bold text-xl sm:text-2xl md:text-4xl mb-2">Tecnologías<br>
-        </section>
-        <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-center items-center pb-5 mx-auto dark:text-black/80 px-4">
+    </section>
+    <section class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-center items-center pb-5 mx-auto dark:text-black/80 px-4">
             <p class="text-lg md:text-xl text-pretty"><span data-translate="tech-description">A lo largo de mi tiempo como</span> <span data-translate="web-dev" class="text-yellow-200/90 dark:text-yellow-400">Desarrollador Web</span>
                <span data-translate="tech-description-2"> , he tenido la oportunidad de desarrollar habilidades con diferentes tipos de</span> <span data-translate="tech" class="text-yellow-200/90 dark:text-yellow-400">Tecnologías</span>.</p>
-        </section>
+    </section>
             
-            <section class="w-[400px] sm:w-[500px] md:w-[740px] mx-auto grid grid-cols-10 auto-rows-[auto] gap-5 text-white/90 dark:text-black text-xl md:text-xl font-bold px-4">
+    <section class="w-[400px] sm:w-[500px] md:w-[740px] mx-auto grid grid-cols-10 auto-rows-[auto] gap-5 text-white/90 dark:text-black text-xl md:text-xl font-bold px-4">
             <div class="col-span-10 rounded-xl shadow-2xl shadow-white/30 dark:shadow-black/90 dark:bg-white 
             dark:bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)
             bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] 
@@ -297,10 +212,12 @@
                 </ul>
             </div>
     </section>
+
     <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px] flex justify-start items-center py-3 mx-auto mt-28 gap-x-3 text-white/75 dark:text-black px-4">
         <svg class="size-10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M7 8l-4 4l4 4"></path><path d="M17 8l4 4l-4 4"></path><path d="M14 4l-4 16"></path></svg>
         <h1 id="tecnologias" class="font-semibold text-xl sm:text-2xl md:text-4xl" data-translate="projects">Proyectos<br>
     </section>
+
     <section id="proyectos" class="w-[400px] sm:w-[500px] md:w-[740px]  justify-start items-center px-4
                      mx-auto mt-4 gap-x-3 text-yellow-200/90 dark:text-yellow-400 text-pretty [&>img]:h-[220px] md:[&>img]:h-[400px]">
         <h1 class="text-lg sm:text-xl md:text-2xl font-bold">
@@ -364,7 +281,7 @@
         </footer>
     </section>
     
-    <script src="language.js"></script>
+    <script src="/src/language.js"></script>
     <script src="src/dark.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
     <script src="../node_modules/flowbite/dist/flowbite.js"></script>

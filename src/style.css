@@ -1,0 +1,82 @@
+html{
+    scroll-behavior: smooth;   
+  }
+  body{
+  color: white;
+  font-family: 'Onest', sans-serif;
+  min-height: 100vh;
+  }
+  @media(prefers-reduce-motion:motion){
+      html{
+          scroll-behavior: auto;
+      }
+  }
+  #grid{
+      background-color: rgb(10 10 10 / var(--tw-bg-opacity));
+  background-image: radial-gradient(ellipse 80% 80% at 50% -20%,rgba(120,119,198,0.3),rgba(255,255,255,0));
+  }
+  #animation{
+      animation: appearFromBottom 1s ease-out;
+      
+  }
+
+@media (max-width: 640px) {
+@keyframes appearFromBottomSmall {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+}
+#animation {
+/* Aplicar estilos comunes a todas las animaciones */
+animation-duration: 1s;
+animation-fill-mode: both;
+}
+
+@media (max-width: 640px) {
+#animation {
+  animation-name: appearFromBottomSmall;
+}
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+#animation {
+  animation-name: appearFromBottomMedium;
+}
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+@keyframes appearFromBottomMedium {
+  0% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+}
+@media (min-width: 768px){
+#animation {
+  animation-name: appearFromBottomBig;
+}
+}
+
+@media (min-width: 768px){
+@keyframes appearFromBottomBig {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+}
