@@ -6,8 +6,8 @@
   <link href="./src/output.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Onest:wght@500&family=Open+Sans:wght@300&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Onest:wght@500&family=Open+Sans:wght@300&family=Yanone+Kaffeesatz:wght@200&display=swap" rel="stylesheet">
 </head>
 <style>
     html{
@@ -29,17 +29,70 @@
     }
     #animation{
         animation: appearFromBottom 1s ease-out;
+        
     }
-    @keyframes appearFromBottom {
-      0% {
-        opacity: 0;
-        transform: translateX(-200px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
+
+@media (max-width: 640px) {
+  @keyframes appearFromBottomSmall {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
     }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+#animation {
+  /* Aplicar estilos comunes a todas las animaciones */
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@media (max-width: 640px) {
+  #animation {
+    animation-name: appearFromBottomSmall;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  #animation {
+    animation-name: appearFromBottomMedium;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  @keyframes appearFromBottomMedium {
+    0% {
+      opacity: 0;
+      transform: translateX(-70px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+@media (min-width: 768px){
+  #animation {
+    animation-name: appearFromBottomBig;
+  }
+}
+
+@media (min-width: 768px){
+  @keyframes appearFromBottomBig {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
 </style>
 
 <body class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] 
