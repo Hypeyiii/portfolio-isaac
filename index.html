@@ -27,6 +27,19 @@
         background-color: rgb(10 10 10 / var(--tw-bg-opacity));
     background-image: radial-gradient(ellipse 80% 80% at 50% -20%,rgba(120,119,198,0.3),rgba(255,255,255,0));
     }
+    #animation{
+        animation: appearFromBottom 1s ease-out;
+    }
+    @keyframes appearFromBottom {
+      0% {
+        opacity: 0;
+        transform: translateX(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
 </style>
 
 <body class="bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] 
@@ -81,7 +94,7 @@
         <section id="sobre-mi" class=" w-[400px] sm:w-[500px] md:w-[740px] items-center justify-center mx-auto mt-32 mb-4 gap-x-3  text-balance dark:text-black px-4">
             <img src="/img/avatar.jpg" class="rounded-full size-10 md:size-20 mb-6 shadow-2xl shadow-white/25 dark:shadow-black/30" alt="Avatar Isaac">
             <div class="flex flex-row gap-x-6">
-            <h1 class="text-2xl md:text-5xl  justify-start font-bold gap-x-6 flex flex-row" data-translate="title"> Hola, soy Isaac</h1>
+            <h1 id="animation" class="text-2xl md:text-5xl  justify-start font-bold gap-x-6 flex flex-row" data-translate="title"> Hola, soy Isaac</h1>
                 <a href="https://www.linkedin.com/in/isaac-frias-56002428a/"
                     class="justify-center items-center flex">
                     <span data-translate="button" class="bg-blue-300 hover:bg-blue-200 text-center text-xs  me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 font-bold text-black hover:scale-105">
