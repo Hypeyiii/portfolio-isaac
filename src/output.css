@@ -2283,6 +2283,30 @@ input:checked + .toggle-bg {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.\[\&\>div\>svg\]\:mb-1>div>svg {
+  margin-bottom: 0.25rem;
+}
+
+.\[\&\>div\>svg\]\:mb-2>div>svg {
+  margin-bottom: 0.5rem;
+}
+
+.\[\&\>div\>svg\]\:mb-3>div>svg {
+  margin-bottom: 0.75rem;
+}
+
+.\[\&\>div\>svg\]\:size-6>div>svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .\[\&\>div\>svg\]\:md\:size-10>div>svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
 .\[\&\>img\]\:h-\[220px\]>img {
   height: 220px;
 }
@@ -2304,5 +2328,22 @@ input:checked + .toggle-bg {
 
   .\[\&\>img\]\:md\:w-\[710px\]>img {
     width: 710px;
+  }
+}
+
+.\[\&\>svg\]\:size-10>svg {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.\[\&\>svg\]\:size-6>svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .\[\&\>svg\]\:md\:size-10>svg {
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
