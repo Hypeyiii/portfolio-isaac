@@ -1444,6 +1444,10 @@ input:checked + .toggle-bg {
   overflow: hidden;
 }
 
+.text-wrap {
+  text-wrap: wrap;
+}
+
 .text-balance {
   text-wrap: balance;
 }
