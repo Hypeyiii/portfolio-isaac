@@ -1,3 +1,10 @@
+//Dark Mode
+const darkModeInput = document.querySelector("#darkmode");
+darkModeInput.addEventListener('click', ()=>{
+    document.documentElement.classList.toggle('dark');
+   });
+
+//Language
 // Objeto con las traducciones
 const translations = {
     'es': {
