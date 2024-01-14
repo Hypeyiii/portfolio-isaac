@@ -1436,6 +1436,14 @@ input:checked + .toggle-bg {
   row-gap: 1.25rem;
 }
 
+.gap-y-1 {
+  row-gap: 0.25rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
@@ -1691,6 +1699,22 @@ input:checked + .toggle-bg {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
+}
+
+.pb-\[1px\] {
+  padding-bottom: 1px;
+}
+
+.pb-\[2px\] {
+  padding-bottom: 2px;
+}
+
+.pb-\[3px\] {
+  padding-bottom: 3px;
 }
 
 .text-left {
@@ -2087,6 +2111,10 @@ input:checked + .toggle-bg {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+
+  .md\:pb-\[4px\] {
+    padding-bottom: 4px;
   }
 
   .md\:text-2xl {
