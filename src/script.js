@@ -1,6 +1,6 @@
 //Dark Mode
-const darkModeInput = document.querySelector("#darkmode");
-darkModeInput.addEventListener('click', ()=>{
+const darkMode = document.querySelector("#darkmode");
+darkMode.addEventListener('click', ()=>{
     document.documentElement.classList.toggle('dark');
    });
 
@@ -26,7 +26,7 @@ const translations = {
         'section-education':'Educacion y Aprendizaje',
         'time-1':'Actualmente...',
         'doing':'Desarrollador y Estudiante',
-        'doing-description':'Cursando 6to semestre en la carrera de Ingeniero Administrador de Sistemas. Desarrollando Web´ s de manera didactica y apasionada.',
+        'doing-description':'Cursando 6to semestre en la carrera de Ingeniero Administrador de Sistemas (IAS). Desarrollando Web´ s de manera didactica y apasionada.',
         'time-2':'Diciembre, 2021',
         'doing-2':'Entrando en el mundo del desarrollo',
         'doing-description-2':'Empecé a adentrarme en el mundo del Desarrollo Web, cursando materias y aprendiendo Tecnologías didacticamente.',
