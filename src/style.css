@@ -82,8 +82,8 @@ animation-fill-mode: both;
 }
 .color-change-5x {
   background: linear-gradient(to right, #19dcea 0%, #b22cff 25%, #ea2222 50%, #f5be10 75%, #3bd80d 100%);
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   background-size: 200% 100%;
   animation: color-change-5x 8s linear infinite;
