@@ -15,8 +15,8 @@
 
     <section id="inicio" class="w-[400px] sm:w-[500px] md:w-[740px] mx-auto text-white/90 dark:text-black text-xl md:text-xl
      font-bold px-4 justify-center items-center flex">
-            <header class="flex py-4 text-xs md:text-xl top-0
-                                    backdrop-blur-2xl rounded-xl mt-3 z-40 fixed dark:text-black mx-auto justify-between items-center">
+            <header class="flex py-4 text-[10px] md:text-xl top-0 
+                            backdrop-blur-2xl rounded-xl mt-3 z-40 fixed dark:text-black mx-auto justify-between items-center">
                 <ul class="flex flex-row justify-center items-center mx-auto gap-x-3 md:gap-x-8 px-2">
                     <li class="hover:bg-gray-400 dark:hover:bg-black/30 hover:scale-110 transition-transform rounded-full p-1"><a href="#" data-translate="home">Inicio</a></li>
                     <li class="hover:bg-gray-400 dark:hover:bg-black/30 hover:scale-110 transition-transform rounded-full p-1" ><a href="#educacion" data-translate="education">Educación</a></li>
@@ -73,13 +73,15 @@
     
     <section id="sobre-mi" class=" w-[400px] sm:w-[500px] md:w-[740px] items-center justify-center mx-auto mt-32 mb-4 gap-x-3  
             text-balance dark:text-black px-4">
-            <img src="/img/avatar.jpg" class="rounded-full size-10 md:size-20 mb-6 shadow-2xl shadow-white/25 dark:shadow-black/30" alt="Avatar Isaac">
+            <img src="/img/avatar.jpg" class="rounded-full size-10 md:size-20 mb-6 shadow-2xl shadow-white/25 dark:shadow-black/90" alt="Avatar Isaac">
             <div class="color-change-2x flex flex-row gap-x-6">
             <h1 id="animation" class="text-2xl md:text-5xl  justify-start font-bold gap-x-6 flex flex-row" data-translate="title"> Hola, soy Isaac</h1>
                 <a href="https://www.linkedin.com/in/isaac-frias-56002428a/"
                     class="justify-center items-center flex">
-                    <span data-translate="button" class="bg-blue-300 hover:bg-blue-200 text-center text-xs  me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 font-bold text-black hover:scale-105">
-                    Contratame aquí</span>
+                    <button data-translate="button" class=" transition-all duration-300 dark:hover:bg-blue-500 shadow-white/25 shadow-lg 
+                    bg-blue-300 hover:bg-blue-200 text-center text-xs me-2 px-2.5 py-0.5 rounded dark:shadow-black
+                    dark:bg-blue-900 dark:text-blue-300 font-bold text-black hover:scale-105">
+                    Contratame aquí</button>
                 </a> 
             </div>          
             
@@ -190,34 +192,33 @@
             bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] 
             dark:bg-white dark:bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)">
                 <h1 class="px-5 pt-5">FrontEnd</h1>
-                <ul class="flex felx-row gap-x-5 mx-auto p-5 justify-start items-center
-                    [&>li]:transition-transform ">
-                    <li class="hover:scale-125">
+                <ul class="flex felx-row gap-x-5 mx-auto p-5 justify-start items-center">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/html-1.svg" alt="HTML LOGO" class="size-10">
                     </li>
-                    <li class="hover:scale-125">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/css-3.svg" alt="HTML LOGO" class="size-10">
                     </li>
-                    <li class="hover:scale-125">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/logo-javascript.svg" alt="HTML LOGO" class="size-10">
                     </li>
-                    <li class="hover:scale-125">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/tailwind-css-2.svg" alt="HTML LOGO" class="size-10">
                     </li>
-                    <li class="hover:scale-125">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/bootstrap-5-1.svg" alt="HTML LOGO" class="size-10">
                     </li>
-                    <li class="hover:scale-125">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/react-2.svg" alt="HTML LOGO" class="size-10">
                     </li>
                 </ul>
                 <h1 class="px-5 pt-5">BackEnd</h1>
                 <ul class="flex felx-row gap-x-5 mx-auto p-5 justify-start items-center
                     [&>li]:transition-transform">
-                    <li class="hover:scale-125">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/nodejs-1.svg" alt="HTML LOGO" class="size-10">
                     </li>
-                    <li class="hover:scale-125">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/java-4.svg" alt="HTML LOGO" class="size-10">
                     </li>
                     
@@ -225,13 +226,13 @@
                 <h1 class="px-5 pt-5">Data Bases</h1>
                 <ul class="flex felx-row gap-x-5 mx-auto p-5 justify-start items-center
                     [&>li]:transition-transform">
-                    <li class="hover:scale-125">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/mysql-logo.svg" alt="HTML LOGO" class="size-10">
                     </li>
-                    <li class="hover:scale-125">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/microsoft-sql-server-1.svg" alt="HTML LOGO" class="size-10">
                     </li>
-                    <li class="hover:scale-125">
+                    <li class="hover:scale-110 transition-all duration-300">
                         <img src="img/sqlite.svg" alt="HTML LOGO" class="size-10">
                     </li>
                 </ul>
@@ -271,7 +272,7 @@
                         </g>
                       </svg>NetBeans</span>
         </ul>
-        <img src="img/Java-Game.png" alt="Java Game created by me" class="rounded shadow-2xl shadow-white/40 aspect-video dark:shadow-black/90">
+        <img src="img/Java-Game.png" alt="Java Game created by me" class="rounded shadow-xl shadow-white/20 aspect-video dark:shadow-black/90">
 
         <h1 class="text-lg sm:text-xl md:text-2xl font-bold mt-[100px]">
             Tesla Landing Page
@@ -287,7 +288,7 @@
                     <svg class="size-4" viewBox=".15 .13 799.7 479.69" xmlns="http://www.w3.org/2000/svg"><path d="m400 .13c-106.63 0-173.27 53.3-199.93 159.89 39.99-53.3 86.64-73.28 139.95-59.96 30.42 7.6 52.16 29.67 76.23 54.09 39.2 39.78 84.57 85.82 183.68 85.82 106.62 0 173.27-53.3 199.92-159.9-39.98 53.3-86.63 73.29-139.95 59.97-30.41-7.6-52.15-29.67-76.22-54.09-39.2-39.78-84.58-85.82-183.68-85.82zm-199.93 239.84c-106.62 0-173.27 53.3-199.92 159.9 39.98-53.3 86.63-73.29 139.95-59.96 30.41 7.61 52.15 29.67 76.22 54.08 39.2 39.78 84.58 85.83 183.68 85.83 106.63 0 173.27-53.3 199.93-159.9-39.99 53.3-86.64 73.29-139.95 59.96-30.42-7.59-52.16-29.67-76.23-54.08-39.2-39.78-84.57-85.83-183.68-85.83z" fill="#06b6d4"/></svg>
                     Tailwind CSS</span>
         </ul>
-        <img src="img/tesla-page.png" alt="Java Game created by me" class="rounded shadow-2xl shadow-white/40 aspect-video dark:shadow-black/90 ">
+        <img src="img/tesla-page.png" alt="Java Game created by me" class="rounded shadow-xl shadow-white/20 aspect-video dark:shadow-black/90 ">
     </div>
     </section>
 
